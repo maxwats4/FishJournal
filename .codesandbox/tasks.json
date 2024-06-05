@@ -16,38 +16,31 @@
     },
     "build": {
       "name": "build",
-      "command": "yarn build",
-      "runAtStart": false
+      "command": "yarn build"
     },
     "test": {
       "name": "test",
-      "command": "yarn test",
-      "runAtStart": false
+      "command": "yarn test"
     },
     "eject": {
       "name": "eject",
-      "command": "yarn eject",
-      "runAtStart": false
+      "command": "yarn eject"
     },
     "install:clean": {
       "name": "install:clean",
-      "command": "yarn install:clean",
-      "runAtStart": false
+      "command": "yarn install:clean"
     },
     "compile:scss": {
       "name": "compile:scss",
-      "command": "yarn compile:scss",
-      "runAtStart": false
+      "command": "yarn compile:scss"
     },
     "minify:scss": {
       "name": "minify:scss",
-      "command": "yarn minify:scss",
-      "runAtStart": false
+      "command": "yarn minify:scss"
     },
     "build:scss": {
       "name": "build:scss",
-      "command": "yarn build:scss",
-      "runAtStart": false
+      "command": "yarn build:scss"
     }
   }
 }

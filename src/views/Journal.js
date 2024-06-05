@@ -1,7 +1,7 @@
 import React, { useState, useCallback } from "react";
 import { useDropzone } from "react-dropzone";
 //import FileUpload from "/project/FlyJournal/src/components/Functions/FileUpload.js";
-//import "/project/FlyJournal/src/components/Functions/FileUpload.css";
+import "assets/css/FileUpload.css";
 // react-bootstrap components
 import {
   Badge,
@@ -69,34 +69,23 @@ function Journal() {
               <Card.Body>
                 <Form>
                   <Row>
-                    <Col className="pr-1" md="5">
+                    <Col className="pr-1" md="8">
                       <Form.Group>
-                        <label>Location</label>
+                        <label>Location Name</label>
                         <Form.Control
                           defaultValue=""
-                          placeholder="Location"
+                          placeholder="Location Name"
                           type="text"
                         ></Form.Control>
                       </Form.Group>
                     </Col>
-                    <Col className="px-1" md="3">
+                    <Col className="px-3" md="4">
                       <Form.Group>
                         <label>Date</label>
                         <Form.Control
                           defaultValue="michael23"
                           placeholder="Username"
                           type="date"
-                        ></Form.Control>
-                      </Form.Group>
-                    </Col>
-                    <Col className="pl-1" md="4">
-                      <Form.Group>
-                        <label htmlFor="exampleInputEmail1">
-                          Email address
-                        </label>
-                        <Form.Control
-                          placeholder="Email"
-                          type="email"
                         ></Form.Control>
                       </Form.Group>
                     </Col>
