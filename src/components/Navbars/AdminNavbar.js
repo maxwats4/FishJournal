@@ -140,8 +140,9 @@ function Header() {
             <Nav.Item>
               <Nav.Link
                 className="m-0"
-                href="#pablo"
+                href="/admin/user"
                 onClick={(e) => e.preventDefault()}
+                to="/user"
               >
                 <span className="no-icon">Account</span>
               </Nav.Link>

@@ -2,6 +2,7 @@ import React, { useState, useCallback } from "react";
 import { useDropzone } from "react-dropzone";
 //import FileUpload from "/project/FlyJournal/src/components/Functions/FileUpload.js";
 import "assets/css/FileUpload.css";
+import JournalView from "components/Features/JournalView.js";
 // react-bootstrap components
 import {
   Badge,
@@ -95,8 +96,8 @@ function Journal() {
                       <Form.Group>
                         <label>Flies Used</label>
                         <Form.Control
-                          defaultValue="Mike"
-                          placeholder="Company"
+                          defaultValue=""
+                          placeholder="Flies Used"
                           type="text"
                         ></Form.Control>
                       </Form.Group>
@@ -112,7 +113,7 @@ function Journal() {
                       </Form.Group>
                     </Col>
                   </Row>
-                  <Row>
+                  {/* <Row>
                     <Col md="12">
                       <Form.Group>
                         <label>Address</label>
@@ -154,7 +155,7 @@ function Journal() {
                         ></Form.Control>
                       </Form.Group>
                     </Col>
-                  </Row>
+                  </Row> */}
                   <Row>
                     <Col md="12">
                       <Form.Group>
@@ -216,7 +217,7 @@ function Journal() {
                         type="submit"
                         className="remove-files-button"
                       >
-                        Save Files
+                        Save
                       </Button>
                     </Form>
                   </Container>
@@ -288,6 +289,9 @@ function Journal() {
             </Card>
           </Col>
         </Row>
+      </Container>
+      <Container>
+        <JournalView />
       </Container>
     </>
   );
